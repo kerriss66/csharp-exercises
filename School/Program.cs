@@ -62,15 +62,27 @@ namespace School
             public override bool Equals(object obj) 
             {
                 bool compare = false;
-                Student studentobj = obj as Student;
+                Student studentObj;
 
-                if (this.StudentId == studentobj.StudentId &&
-                    this.Name == studentobj.Name)
+                if (obj == null || (obj.GetType() != this.GetType())) 
+                {
+                    return false;
+                }
+
+                studentObj = obj as Student;
+
+                if (this.StudentId == studentObj.StudentId &&
+                    this.Name == studentObj.Name)
                 {
                     compare = true;
                 }
                 
                 return compare;
+            }
+
+            public override int GetHashCode()
+            {
+                return base.GetHashCode() * 14000 + StudentId;
             }
 
             public static double GetCreditsPerYear()
@@ -141,6 +153,9 @@ namespace School
                     Console.WriteLine("1 " + st.Equals(st2));
                     Console.WriteLine("2 " + st.Equals(st4));
                     Console.WriteLine("3 " + st.Equals(new Student("Ben", 0)));
+
+                    Console.WriteLine(st.GetHashCode() + " " + st2.GetHashCode());
+                    Console.WriteLine(new Student("Ben" , 0).GetHashCode());
                 }
 
             }
