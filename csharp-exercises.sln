@@ -34,7 +34,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArraysClass2", "ArraysClass
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountingCharacters", "CountingCharacters\CountingCharacters.csproj", "{242B099B-CD49-4552-97AE-D510D9622025}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School", "School\School.csproj", "{A1496B35-7110-437D-9704-BA60E116992D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "School", "School\School.csproj", "{A1496B35-7110-437D-9704-BA60E116992D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{48786642-C7EB-4141-93CB-8B57374F45C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -110,6 +112,10 @@ Global
 		{A1496B35-7110-437D-9704-BA60E116992D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1496B35-7110-437D-9704-BA60E116992D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1496B35-7110-437D-9704-BA60E116992D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48786642-C7EB-4141-93CB-8B57374F45C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48786642-C7EB-4141-93CB-8B57374F45C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48786642-C7EB-4141-93CB-8B57374F45C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48786642-C7EB-4141-93CB-8B57374F45C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
